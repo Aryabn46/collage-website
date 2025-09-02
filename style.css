@@ -1,0 +1,86 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    }
+    header {
+    background-color: rgb(5, 49, 191);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    p{
+        text-align: justify;
+    }
+    .logo img {
+    max-width: 300px;
+    height: auto;
+    }
+    .header-content {
+    text-align: left;
+    }
+    nav {
+    background-color: rgb(103, 200, 233);
+    }
+    .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    }
+    .menu li {
+    margin: 0 1rem;
+    position: relative;
+    }
+    .menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+    .menu a:hover {
+    color: #ff9900;
+    }
+    .submenu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(7, 190, 251);
+    z-index: 1;
+    }
+    .submenu:hover .submenu-content {
+    display: block;
+    }
+    main {
+    padding: 2rem;
+    text-align: justify;
+    }
+    .department {
+    margin-bottom: 2rem;
+    }
+    footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgb(0, 139, 7);
+    color: #fff;
+    }
+    .social-links a{
+    color: rgb(72, 0, 255);
+    text-decoration: none;
+    margin: 0 10px;
+     }
+        
+    @media screen and (max-width: 768px) {
+    header {
+    flex-direction: column;}
+    .logo {
+    margin-bottom: 1em;
+    }
+    }
